@@ -159,26 +159,27 @@ RANK is 0
 -----------------
 ```
 ## Problem 11
+In this code number of threads is `4` for each process and we are printing a `sum` by incremeting it by 5 using `for` loop, for each process sum should be `20`. And it is printing `20` using `iittp_barrier`.
+
 Run and Input: `mpiexec -np [number of processes] .\P11.exe`
 
 Run and Input: `mpiexec -np 4 .\P11.exe`
 
 Output: 
 ```
-1 0
-1 2
-1 1
-1 3
-22  03
+202020
 
-2 1
-2 2
-33 0
- 2
-3 3
-3 1
-0 0
-0 2
-0 30
- 1
+20
+2020
+
+20
+20
+202020
+
+
+20
+20
+20
+20
+20
  ```
