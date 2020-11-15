@@ -158,3 +158,27 @@ RANK is 0
 46 16 33 35
 -----------------
 ```
+## Problem 11
+Run and Input: `mpiexec -np [number of processes] .\P11.exe`
+
+Run and Input: `mpiexec -np 4 .\P11.exe`
+
+Output: 
+```
+1 0
+1 2
+1 1
+1 3
+22  03
+
+2 1
+2 2
+33 0
+ 2
+3 3
+3 1
+0 0
+0 2
+0 30
+ 1
+ ```
