@@ -26,7 +26,7 @@ int main(int argc, char** argv) {
 		cout << "LATEST VALUES ";
 		for (int i = 0; i < N; i++) cout << brr[i] << ' ';
 		cout << '\n';
-		cout << "--------------------\n";
+		cout << "---------------------\n";
 
 		int *arr_p = (int*)malloc(N * sizeof(int));
 		int* brr_p = (int*)malloc(N * sizeof(int));
@@ -41,7 +41,7 @@ int main(int argc, char** argv) {
 			cout << "LATEST VALUES ";
 			for (int j = 0; j < N; j++) cout << brr_p[j] << ' ';
 			cout << '\n';
-			cout << "--------------------\n";
+			cout << "---------------------\n";
 		}
 	}
 	else {
