@@ -86,3 +86,10 @@ Run and Input: `mpiexec -np [number of processes] .\P7.exe [Length of Array N]`
 Run and Input: `mpiexec -np 4 .\P7.exe 1000`
 
 Output:  `Sum is 49226`
+
+## Problem 1
+Run and Input: `mpiexec -np [number of processes] .\P8.exe [Size of Vector N]`
+
+Run and Input: `mpiexec -np 4 .\P8.exe 1000`
+
+Output: `SCALAR VALUE is 844762`
