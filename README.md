@@ -8,9 +8,9 @@ Compile and Input: `mpiexec -np 10 .\P1.exe 5`
 Output: `SUM is 264`
 
 ## Problem 2
-Compile: `mpiexec -np [number of processes] .\P1.exe [Length of Array N]`
+Compile: `mpiexec -np [number of processes] .\P2.exe [Length of Array N]`
 
-Compile and Input: `mpiexec -np 4 .\P1.exe 5`
+Compile and Input: `mpiexec -np 4 .\P2.exe 5`
 
 Output: 
 ```
@@ -32,3 +32,8 @@ LATEST VALUES 2 2 2 2 2
 --------------------
 ```
 ## Problem 3
+Compile: `mpiexec -np [number of processes] .\P3.exe [Length of Array N]`
+
+Compile and Input: `mpiexec -np 4 .\P3.exe 5`
+
+Output: `ACTUAL SUM and MPI SUM 45 45`
