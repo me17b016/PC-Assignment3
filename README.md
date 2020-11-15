@@ -93,3 +93,34 @@ Run and Input: `mpiexec -np [number of processes] .\P8.exe [Size of Vector N]`
 Run and Input: `mpiexec -np 4 .\P8.exe 1000`
 
 Output: `SCALAR VALUE is 844762`
+
+## Problem 9
+Compile: `g++ -std=c++14 P9.cpp -o P9 -fopenmp`
+
+Run and Input: `P9.exe [Number of Threads nthreads] [M] [N] [P]`
+
+Run and Input: `P9.exe 2 4 4 4`
+
+Output:
+```
+MATRIX A:
+57 99 3 16
+92 91 89 51 
+15 68 98 51
+45 51 19 49
+---------------
+MATRIX B:
+8 77 65 89
+55 83 77 14
+24 91 31 43
+48 97 6 32
+---------------
+MATRIX C:
+6741 14431 11517 7100
+10325 27683 16052 14921 
+8660 20664 9555 8133
+5973 14180 7735 7104
+---------------
+Time take is 1029 us
+----------------
+```
