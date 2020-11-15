@@ -40,9 +40,10 @@ int main(int argc, char** argv) {
 		int n = 1 + N / np;
 		int r = N % np;
 		if (r && r >= rank + 1) n++;
+		
 		int* A; A = (int*)malloc((n) * sizeof(int));
 		MPI_Recv(A, n, MPI_INT, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-		int local_sum = 0;
+
 		for (int i = 1; i < n; i++) local_sum += A[i];
 		MPI_Send(&local_sum, 1, MPI_INT, 0, 0, MPI_COMM_WORLD);
 		MPI_Reduce(&local_sum, &global_sum, 1, MPI_INT, MPI_SUM, 0, MPI_COMM_WORLD);
