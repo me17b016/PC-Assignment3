@@ -87,7 +87,7 @@ Run and Input: `mpiexec -np 4 .\P7.exe 1000`
 
 Output:  `Sum is 49226`
 
-## Problem 1
+## Problem 8
 Run and Input: `mpiexec -np [number of processes] .\P8.exe [Size of Vector N]`
 
 Run and Input: `mpiexec -np 4 .\P8.exe 1000`
