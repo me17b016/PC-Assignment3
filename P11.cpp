@@ -10,7 +10,7 @@ using namespace std;
 std::mutex mtx;
 
 const int nthreads = 4;
-int cnt = 0;
+int cnt = 0, sum = 0;
 
 void iittp_barrier(int np, int rank, int tid) {
 	if (!tid) {
@@ -35,8 +35,9 @@ void iittp_barrier(int np, int rank, int tid) {
 }
 
 void print(int tid, int rank, int np) {
-	cout << rank << ' ' << tid << '\n';
 	iittp_barrier(np, rank, tid);
+	for (int i = 0; i < 5; i++) sum++;
+	cout << sum << '\n';
 }
 
 int main(int argc, char** argv) {
