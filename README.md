@@ -1,16 +1,16 @@
 # PC-Assignment3
 Parallel Computing Assignment-3
 ## Problem 1
-Compile: `mpiexec -np [number of processes] .\P1.exe [Length of Array N]`
+Run and Input: `mpiexec -np [number of processes] .\P1.exe [Length of Array N]`
 
-Compile and Input: `mpiexec -np 10 .\P1.exe 5`
+Run and Input: `mpiexec -np 10 .\P1.exe 5`
 
 Output: `SUM is 264`
 
 ## Problem 2
-Compile: `mpiexec -np [number of processes] .\P2.exe [Length of Array N]`
+Run and Input: `mpiexec -np [number of processes] .\P2.exe [Length of Array N]`
 
-Compile and Input: `mpiexec -np 4 .\P2.exe 5`
+Run and Input: `mpiexec -np 4 .\P2.exe 5`
 
 Output: 
 ```
@@ -32,9 +32,9 @@ LATEST VALUES 2 2 2 2 2
 --------------------
 ```
 ## Problem 3
-Compile: `mpiexec -np [number of processes] .\P3.exe [Length of Array N]`
+Run and Input: `mpiexec -np [number of processes] .\P3.exe [Length of Array N]`
 
-Compile and Input: `mpiexec -np 4 .\P3.exe 5`
+Run and Input: `mpiexec -np 4 .\P3.exe 5`
 
 Output: `ACTUAL SUM and MPI SUM 45 45`
 
@@ -46,9 +46,15 @@ For Cyclic: `1`
 
 For Block-Cyclic: `2`
 
-Compile: `mpiexec -np [number of processes] .\P4.exe [Length of Array N] [Distribution]`
+Run and Input: `mpiexec -np [number of processes] .\P4.exe [Length of Array N] [Distribution]`
 
-Compile and Input: `mpiexec -np 4 .\P4.exe 5 1`
+Run and Input: `mpiexec -np 4 .\P4.exe 5 1`
 
 Output: `ACTUAL SUM and MPI SUM 45 45`
 
+## Problem 5
+Compile: `g++ -std=c++14 P5.cpp`
+
+Run and Input: `a.exe [Number of Threads nthreads] [Length of array N]`
+
+Run and Input: `a.exe 4 100000`
