@@ -58,3 +58,11 @@ Compile: `g++ -std=c++14 P5.cpp`
 Run and Input: `a.exe [Number of Threads nthreads] [Length of array N]`
 
 Run and Input: `a.exe 4 100000`
+
+Output: 
+
+```
+Sum is 1639203031
+Time take is 1995 us
+----------------
+```
