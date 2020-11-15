@@ -15,10 +15,6 @@ int main(int argc, char** argv) {
   vector<int> arr(N);
   for (int i = 0; i < N; i++) arr[i] = rand();
 
-  int asum = 0;
-  for (auto to : arr) asum += to;
-  cout << "Ans is " << asum << '\n';
-
   auto start = chrono::high_resolution_clock::now();
 
   int total_sum = 0;
@@ -29,6 +25,6 @@ int main(int argc, char** argv) {
   cout << "Sum is " << total_sum << '\n';
   auto end = chrono::high_resolution_clock::now();
   auto duration = chrono::duration_cast<chrono::microseconds>(end - start);
-  cout << "Time take is " << duration.count() << " ms" << '\n';
+  cout << "Time take is " << duration.count() << " us" << '\n';
   cout << "----------------\n";
 }
