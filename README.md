@@ -66,3 +66,17 @@ Sum is 1639203031
 Time take is 1995 us
 ----------------
 ```
+## Problem 6
+Compile: `g++ -std=c++14 P6.cpp -o P6 -fopenmp`
+
+Run and Input: `P6.exe [Number of Threads nthreads] [Length of array N]`
+
+Run and Input: `P6.exe 4 100000`
+
+Output: 
+
+```
+Sum is 1637062792
+Time take is 1824 us
+----------------
+```
