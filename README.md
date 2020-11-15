@@ -124,3 +124,37 @@ MATRIX C:
 Time take is 1029 us
 ----------------
 ```
+## Problem 10
+Run and Input: `mpiexec -np [number of processes] .\P10.exe [Length of Array N] [Number of Iteration M]`
+
+Run and Input: `mpiexec -np 4 .\P10.exe 4 2`
+
+Output: 
+```
+RANK is 3
+7 29 9 12
+-----------------
+RANK is 3
+46 16 33 35
+-----------------
+RANK is 2
+12 4 17 1
+-----------------
+RANK is 2
+12 4 17 1
+-----------------
+RANK is 1
+25 34 25 43
+-----------------
+RANK is 1
+25 34 25 43
+-----------------
+RANK is 0
+46 16 33 35
+-----------------
+[ 0 => 0 ]
+[ 0 => 3 ]
+RANK is 0
+46 16 33 35
+-----------------
+```
