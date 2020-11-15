@@ -37,3 +37,18 @@ Compile: `mpiexec -np [number of processes] .\P3.exe [Length of Array N]`
 Compile and Input: `mpiexec -np 4 .\P3.exe 5`
 
 Output: `ACTUAL SUM and MPI SUM 45 45`
+
+## Problem 4
+#### Distribution
+For Block : `0`
+
+For Cyclic: `1`
+
+For Block-Cyclic: `2`
+
+Compile: `mpiexec -np [number of processes] .\P4.exe [Length of Array N] [Distribution]`
+
+Compile and Input: `mpiexec -np 4 .\P4.exe 5 1`
+
+Output: `ACTUAL SUM and MPI SUM 45 45`
+
