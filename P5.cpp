@@ -38,10 +38,6 @@ int main(int argc, char** argv) {
     N += nthreads - N % nthreads;
   }
 
-  int asum = 0;
-  for (int to : arr) asum += to;
-  cout << "Ans is " << asum << '\n';
-
   vector<thread> threads;
   auto start = chrono::high_resolution_clock::now();
 
@@ -57,6 +53,6 @@ int main(int argc, char** argv) {
 
   auto end = chrono::high_resolution_clock::now();
   auto duration = chrono::duration_cast<chrono::microseconds>(end - start);
-  cout << "Time take is " << duration.count() << " ms" << '\n';
+  cout << "Time take is " << duration.count() << " us" << '\n';
   cout << "----------------\n";
 }
