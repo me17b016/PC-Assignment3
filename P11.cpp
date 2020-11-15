@@ -35,8 +35,8 @@ void iittp_barrier(int np, int rank, int tid) {
 }
 
 void print(int tid, int rank, int np) {
-	iittp_barrier(np, rank, tid);
 	for (int i = 0; i < 5; i++) sum++;
+	iittp_barrier(np, rank, tid);
 	cout << sum << '\n';
 }
 
