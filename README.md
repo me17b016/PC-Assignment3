@@ -80,3 +80,9 @@ Sum is 1637062792
 Time take is 1824 us
 ----------------
 ```
+## Problem 7
+Run and Input: `mpiexec -np [number of processes] .\P7.exe [Length of Array N]`
+
+Run and Input: `mpiexec -np 4 .\P7.exe 1000`
+
+Output:  `Sum is 49226`
