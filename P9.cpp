@@ -50,7 +50,7 @@ int main(int argc, char** argv) {
   }
   cout << "---------------\nMATRIX C:\n";
   for (int i = 0; i < m; i++) {
-    for (int j = 0; j < p; j++) cout << arr[i * p + j] << ' ';
+    for (int j = 0; j < p; j++) cout << crr[i * p + j] << ' ';
     cout << '\n';
   }
 
