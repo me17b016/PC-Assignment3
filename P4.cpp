@@ -71,12 +71,8 @@ int main(int argc, char** argv) {
 	int local_sum = 0, global_sum = 0;
 	int* local_arr, n;
 
-	if (!distribution) {
-		block_distribution(n, local_arr, N, rank, np);
-	}
-	else if (distribution & 1) {
-		cyclic_distribution(n, local_arr, N, rank, np);
-	}
+	if (!distribution) block_distribution(n, local_arr, N, rank, np);
+	else if (distribution & 1) cyclic_distribution(n, local_arr, N, rank, np);
 	else block_cyclic_distribution(n, local_arr, N, rank, np);
 
 	for (int i = 0; i < n; i++) local_sum += local_arr[i];
